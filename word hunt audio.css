@@ -1,0 +1,228 @@
+body{
+	color:black;
+	background-color:#fdfffc;
+}
+#input{
+	font-family: 'Cherry Bomb One', cursive;
+	width:350px;
+	height:52px;
+	position:absolute;
+	bottom:30px;
+	margin-left:370px;
+	color: black;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	background-color: rgb(214, 214, 214);
+	box-shadow: 5px 5px 10px #b6a9a9,
+	-5px -5px 10px #ffffff;
+	animation: button1 1s infinite alternate;
+}
+#input:hover{
+	background-color: #00ffff !important;
+	animation-play-state: paused;
+	box-shadow: 0 0 10px #00ffff,
+	0 0 30px #00ffff,
+	
+}
+#input:active {				
+		box-shadow: inset 1px 1px 2px #babecc,
+		inset -5px -5px 10px #ffffff;
+	}
+#button{
+	font-family: 'Cherry Bomb One', cursive;
+	height:52px;
+	width:100px;
+	position:absolute;
+	bottom:30px;
+	left:660px;
+	margin: 15px 0 0 5px;
+	border: none;
+	outline: none;
+	font-size: 25px;
+	border-radius: 8px;
+	background-color: rgb(214, 214, 214);
+	box-shadow: 5px 5px 10px #b6a9a9,
+	-5px -5px 10px #ffffff;
+	animation: button1 1s infinite alternate;
+}
+#button:hover{
+	background-color: #00ffff !important;
+	animation-play-state: paused;
+	box-shadow: 0 0 10px #00ffff,
+	0 0 30px #00ffff,
+	0 0 60px #00ffff;
+}
+#button:active {				
+		box-shadow: inset 1px 1px 2px #babecc,
+		inset -5px -5px 10px #ffffff;
+	}
+#button1 {
+	font-family: 'Cherry Bomb One', cursive;
+	height:52px;
+	width:250px;
+	position:absolute;
+	bottom:30px;
+	left:250px;
+	color:black;
+	margin: 15px 0 0 5px;
+	border: none;
+	outline: none;
+	font-size: 25px;
+	border-radius: 8px;
+	background-color: rgb(214, 214, 214);
+	box-shadow: 5px 5px 10px #b6a9a9,
+	-5px -5px 10px #ffffff;
+	animation: button1 1s infinite alternate;
+}
+		
+#button1:hover{
+	background-color: #00ffff !important;
+	animation-play-state: paused;
+	box-shadow: 0 0 10px #00ffff,
+	0 0 30px #00ffff,
+	0 0 60px #00ffff;
+}
+#button1:active {				
+		box-shadow: inset 1px 1px 2px #babecc,
+		inset -5px -5px 10px #ffffff;
+}
+
+#rest {
+	font-family: 'Cherry Bomb One', cursive;
+	height:52px;
+	width:250px;
+	position:absolute;
+	bottom:30px;
+	left:550px;
+	margin: 15px 0 0 5px;
+	border: none;
+	outline: none;
+	font-size: 25px;
+	text-align:center;
+	border-radius: 8px;
+	background-color: rgb(214, 214, 214);
+	box-shadow: 5px 5px 10px #b6a9a9,
+	-5px -5px 10px #ffffff;
+	animation: button1 1s infinite alternate;
+}
+
+#rest1 {
+	font-family: 'Cherry Bomb One', cursive;
+	height:52px;
+	width:250px;
+	position:absolute;
+	bottom:30px;
+	left:550px;
+	margin: 15px 0 0 5px;
+	border: none;
+	outline: none;
+	font-size: 25px;
+	text-align:center;
+	border-radius: 8px;
+	background-color: rgb(214, 214, 214);
+	box-shadow: 5px 5px 10px #b6a9a9,
+	-5px -5px 10px #ffffff;
+	animation: button1 1s infinite alternate;
+}
+#score {
+	font-family: 'Cherry Bomb One', cursive;
+	height:52px;
+	width:180px;
+	position:absolute;
+	margin: 15px 0 0 5px;
+	border: none;
+	color:black;
+	outline: none;
+	font-size: 25px;
+	text-align:center;
+	border-radius: 8px;
+	background-color: rgb(214, 214, 214);
+	box-shadow: 5px 5px 10px #b6a9a9,
+	-5px -5px 10px #ffffff;
+	animation: button1 1s infinite alternate;
+}
+@keyframes button1 {
+from {
+	background-color: #00ffff;
+}
+to {
+	background-color: #ff00ff;
+	}
+}
+#maindiv {
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	font-size: 55px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left:380px;
+	top:25%;
+}
+#maindiv1 {
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size: 55px;
+	margin-left:580px;
+	top:25%;
+}
+#answer-1{
+	font-size:50px;
+	position:absolute;
+	font-family: 'Cherry Bomb One', cursive;
+	animation: swing 3s linear infinite alternate;
+}
+#answer-2{
+	font-size:50px;
+	position:absolute;
+	font-family: 'Cherry Bomb One', cursive;
+	animation: swing 3s linear infinite alternate;
+}
+#gameover{
+	position:absolute;
+	height:100%;
+	width:100%;
+	bottom:0px;
+	display:none;
+	
+}
+#youwon{
+	position:absolute;
+	height:100%;
+	width:100%;
+	bottom:0px;
+	display:none;
+}
+.h1{
+	font-family: 'Cherry Bomb One', cursive;
+	border-radius: 5px;
+	height:55px;
+	text-align: center;
+	color:black;
+	text-transform: uppercase;
+	background-color: rgb(214, 214, 214);
+	box-shadow: 5px 5px 10px #b6a9a9,
+	-5px -5px 10px #ffffff;
+	animation: button1 1s infinite alternate;
+	letter-spacing: 15px;
+	text-shadow: 0 2px 0 yellow,
+	0 2px 0 yellow,
+	0 3px 0 #efefef,
+	0 4px 0 #efefef,
+	0 30px 5px rgba(0, 0, 0, 0.1);
+}
+@keyframes swing {
+	from {
+		transform: rotate(8deg);
+	}
+	to {
+		transform: rotate(-8deg);
+	}
+}

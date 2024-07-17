@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	</style>
+	<body>
+
+		<input type="text" id="demo"><button onclick="changeFontColor()">click</button>
+		
+		<p id ="demo-1" style="font-size:30px;display:none;">javascript is a</p>
+		
+		<p id = "demo-3"></p>
+		<script>
+			var y = 0;
+			
+			var change = ["hello","hi","book","good","ok"];
+				document.getElementById("demo-3").innerHTML = change[y];
+				
+			function changeFontColor() {
+				var userinput = document.getElementById("demo").value;
+				if (y <= change.length) {	
+					if (change[y] === userinput ) {
+						y++;
+						document.getElementById("demo-3").innerHTML = change[y];
+						document.getElementById("demo").value = '';
+					}
+				
+					if (y >= change.length){
+						document.getElementById("demo-3").innerHTML ='game over';
+					}
+				}
+			}
+			
+		</script>
+	</body>
+</html>

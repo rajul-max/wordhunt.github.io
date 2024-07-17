@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	</style>
+	<body>
+
+		<input type="text" id="demo"><button onclick="changeFontColor()">click</button>
+		
+		<p id ="demo-1" style="font-size:30px;display:none;">javascript is a scripting language for creating dynamic web page content. It creates elements for improving site visitors' interaction with web pages, such as dropdown menus, animated graphics, and dynamic background colors.</p>
+		<p id = "demo-3"></p>
+		
+		<script>
+			var y = 0;
+			//var array = document.getElementById("demo-1").innerHTML;
+			var change = ["hello","hi","book","good",""];
+				document.getElementById("demo-3").innerHTML = change[y];
+			function changeFontColor() {
+				var userinput = document.getElementById("demo").value;
+				for (let i = 0; i <= change.length; i++) {	
+					if (change[i] === userinput ) {
+						userinput.replace(change[i]);
+						y++;
+						document.getElementById("demo-3").innerHTML = change[y];
+						document.getElementById("demo").value = '';
+					}	
+				}
+			}
+
+			
+		</script>
+	</body>
+</html>

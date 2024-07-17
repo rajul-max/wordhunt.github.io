@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Kalam&family=Kenia&family=Nosifer&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:ital@1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Sedgwick+Ave+Display&family=Silkscreen&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background-image: url("background.jpg");
+			background-repeat: no-repeat;
+			background-size:100% 100%;
+			color:black;
+			background-attachment:fixed;
+		}
+		#input{
+			width:350px;
+			height:52px;
+			position:absolute;
+			bottom:30px;
+			margin-left:300px;
+			color: black;
+			font-size: 30px;
+			border: none;
+			outline: none;
+			font-weight: bold;
+			border-radius: 8px;
+			background-color: rgb(214, 214, 214);
+			box-shadow: 5px 5px 10px #b6a9a9,
+			-5px -5px 10px #ffffff;
+			animation: button1 1s infinite alternate;
+		}
+		#input:hover{
+			background-color: #00ffff !important;
+			animation-play-state: paused;
+			box-shadow: 0 0 10px #00ffff,
+			0 0 30px #00ffff,
+			
+		}
+		#input:active {				
+				box-shadow: inset 1px 1px 2px #babecc,
+				inset -5px -5px 10px #ffffff;
+			}
+		#button{
+			font-family: 'Silkscreen', sans-serif;
+			height:52px;
+			width:100px;
+			position:absolute;
+			bottom:30px;
+			left:660px;
+			margin: 15px 0 0 5px;
+			border: none;
+			outline: none;
+			font-size: 25px;
+			font-weight: bold;
+			border-radius: 8px;
+			background-color: rgb(214, 214, 214);
+			box-shadow: 5px 5px 10px #b6a9a9,
+			-5px -5px 10px #ffffff;
+			animation: button1 1s infinite alternate;
+		}
+		#button:hover{
+			background-color: #00ffff !important;
+			animation-play-state: paused;
+			box-shadow: 0 0 10px #00ffff,
+			0 0 30px #00ffff,
+			0 0 60px #00ffff;
+		}
+		#button:active {				
+				box-shadow: inset 1px 1px 2px #babecc,
+				inset -5px -5px 10px #ffffff;
+			}
+		#button1 {
+			font-family: 'Silkscreen', sans-serif;
+			height:52px;
+			width:250px;
+			position:absolute;
+			bottom:30px;
+			left:390px;
+			margin: 15px 0 0 5px;
+			border: none;
+			outline: none;
+			font-size: 25px;
+			font-weight: bold;
+			border-radius: 8px;
+			background-color: rgb(214, 214, 214);
+			box-shadow: 5px 5px 10px #b6a9a9,
+			-5px -5px 10px #ffffff;
+			animation: button1 1s infinite alternate;
+		}
+				
+		#button1:hover{
+			background-color: #00ffff !important;
+			animation-play-state: paused;
+			box-shadow: 0 0 10px #00ffff,
+			0 0 30px #00ffff,
+			0 0 60px #00ffff;
+		}
+		#button1:active {				
+				box-shadow: inset 1px 1px 2px #babecc,
+				inset -5px -5px 10px #ffffff;
+			}
+		@keyframes button1 {
+		from {
+			background-color: #00ffff;
+		}
+		to {
+			background-color: #ff00ff;
+			}
+		}
+		#maindiv {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            font-size: 55px;
+            font-weight: bold;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			margin-left:380px;
+			top:25%;
+        }
+		#maindiv1 {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+            font-size: 55px;
+            font-weight: bold;
+			margin-left:580px;
+			top:25%;
+        }
+        #demo-3{
+			font-size:50px;
+			position:absolute;
+			color:white;
+			font-family: 'Silkscreen', sans-serif;
+			animation: swing 3s linear infinite alternate;
+		}
+		#demo-2{
+			font-size:50px;
+			position:absolute;
+			color:white;
+			font-family: 'Silkscreen', sans-serif;
+			animation: swing 3s linear infinite alternate;
+		}
+		#gameover{
+			position:absolute;
+			height:100%;
+			width:100%;
+			bottom:0px;
+			display:none;
+			
+		}
+		#youwon{
+			position:absolute;
+			height:100%;
+			width:100%;
+			bottom:0px;
+			display:none;
+		}
+		.h1{
+			font-family: 'Nosifer', sans-serif;
+			border-radius: 10px;
+			text-align: center;
+			text-transform: uppercase;
+			background-color: rgb(214, 214, 214);
+			box-shadow: 5px 5px 10px #b6a9a9,
+			-5px -5px 10px #ffffff;
+			animation: button1 1s infinite alternate;
+			letter-spacing: 15px;
+			text-shadow: 0 1px 0 yellow,
+               0 2px 0 yellow,
+               0 3px 0 #efefef,
+               0 4px 0 #efefef,
+               0 30px 5px rgba(0, 0, 0, 0.1);
+		}
+		@keyframes swing {
+			from {
+				transform: rotate(5deg);
+			}
+			to {
+				transform: rotate(-5deg);
+			}
+		}
+	</style>
+	<body style="overflow:hidden;">
+		<center>
+			<h1 class="h1">
+				<i>
+					word puzzle
+				</i>
+			</h1>
+		</center>
+		
+		<div id="maindiv">
+			<p id = "demo-3"></p>
+		</div>
+		
+		<div id="maindiv1">
+			<p id = "demo-2"></p>
+		</div>
+		
+		<input type="text" id="input">
+		
+		<button onclick="abc()"id="button">
+			click
+		</button>
+		<div id="gameover">
+			<img src="gameover.jpg"style="height:100%;width:100%;object-fit:cover;">
+			<button id="button1">
+				<a href="file:///C:/java%20script/word%20puzzle.html"style="text-decoration:none;color:black;">
+					Restart
+				</a>
+			</button>
+		</div>
+		
+		<div id="youwon">
+			<img src="youwon.jpg"style="height:100%;width:100%;object-fit:cover;">
+			<button id="button1">
+			<a href="file:///C:/java%20script/word%20puzzle.html"style="text-decoration:none;color:black;">PLAY AGAIN</a>
+		</button>
+		</div>
+		<script>
+			const element = document.getElementById("maindiv");//animation div
+			const element1 = document.getElementById("maindiv1");//animation div
+			let height = 0;
+			let height1 = 0;
+			function animation() {
+				if (height < 320) {
+					height += 1;
+					height1 += 2;
+					element.style.height = height + "px";
+					element1.style.height = height1 + "px";
+					requestAnimationFrame(animation);
+				}
+				
+				else {
+					document.getElementById("gameover").style.display = "block";
+					document.getElementById("demo-3").style.display ="none";
+					document.getElementById("input").style.display = "none";
+					document.getElementById("button").style.display = "none";
+					
+				}
+			}
+			animation();
+			var y = 0;
+			var change = ["hi","ok","hello","book","good"];
+				document.getElementById("demo-3").innerHTML = change[y];
+				document.getElementById("demo-2").innerHTML = change[y];
+			function abc() {
+				var userinput = document.getElementById("input").value;
+				if(y <= change.length) {	
+					if (change[y] == userinput) {
+						height = 0;
+						height++;
+						height1 = 0;
+					    height1++;
+						y++;
+						document.getElementById("demo-3").innerHTML = change[y];
+						document.getElementById("demo-2").innerHTML = change[y];
+						document.getElementById("input").value = '';
+					}
+					if (y >= change.length){
+						document.getElementById("gameover").style.display = "none";
+						document.getElementById("input").style.display = "none";
+						document.getElementById("button").style.display = "none";
+						document.getElementById("demo-3").style.display = "none";
+						document.getElementById("demo-2").style.display = "none";
+						document.getElementById("youwon").style.display = "block";
+						
+					}
+				}
+					
+			}				
+			
+		</script>
+	</body>
+</html>
